@@ -13,5 +13,9 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <% if (NODE_ENV === 'development') {%>
+    <script src="//app.storyblok.com/f/storyblok-latest.js?t=<%= VUE_APP_TOKEN %>" type="text/javascript">
+    </script>
+    <% } %>
   </body>
 </html>
